@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="custom.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <title>Social Realm</title>
+</head>
+
+<body onload="userConnection()" onbeforeunload="return reloadConformation()">
+
+  <audio id="notification-audio">
+    <source src="notify.mp3" type="audio/mpeg">
+    </source>
+  </audio>
+  <div id="Container">
+
+    <ul id="messages"></ul>
+
+  </div>
+  
+  <form id="form" action="">
+    <input id="input" autocomplete="off" /><button id="send">Send</button>
+  </form>
+</body>
+<script src="/socket.io/socket.io.js"></script>
+<script src="script.js"></script>
+<script src="PopUp.js"></script>
+
+</html>
