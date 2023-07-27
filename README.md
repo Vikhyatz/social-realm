@@ -1,2 +1,2 @@
 # social-realm
-fully working chat application -_-
+working chat application -_-
